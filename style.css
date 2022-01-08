@@ -25,6 +25,7 @@
 .padded-b-2 { padding-bottom: 2rem; }
 
 .margin-top { margin-top: 2.5rem; }
+.margin-t-1 { margin-top: 1.5rem; }
 
 .margin-b-0 { margin-bottom: 0; }
 
@@ -78,6 +79,11 @@ a {
     text-decoration: none;
 }
 
+i {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
 /* Unique typography styles */
 
 .tight-text {
@@ -112,9 +118,9 @@ footer {
 
 footer a { font-size: 1.2rem; }
 
-footer h2 { margin-bottom: 0.5rem; }
+/* footer h2 { margin-bottom: 0.5rem; } */
 
-.sub-footer { padding-top: 5%; }
+.sub-footer { padding-top: 3%; }
 .sub-footer p {
     font-size: 0.8rem; 
     opacity: 0.7;
