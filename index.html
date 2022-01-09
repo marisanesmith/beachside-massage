@@ -19,6 +19,10 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!------- Animate on Scroll -------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <!-------- External CSS Stylesheet --------->
     <link rel="stylesheet" type="text/css" href="style.css">
 <body>
@@ -33,7 +37,7 @@
     <!------- Alternate banners section -------->
     <section class="grid tall-70 bg-featured">
         <div class="col-6_sm-12-middle center light-text padded">
-            <h2>find your zen</h2>
+            <h2 data-aos="fade-up">find your zen</h2>
             <p class="margin-top">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam tenetur asperiores, provident ipsam vel voluptate aut molestiae minus sequi, nisi, enim voluptas ipsum quis unde fugit iste. Doloribus, vero deleniti.</p>
         </div>
         <div class="col-6_sm-12 bg-image bg-leaves"></div>
@@ -41,7 +45,7 @@
     <section class="grid tall-70 bg-featured">
         <div class="col-6_sm-12 bg-image bg-candles"></div>
         <div class="col-6_sm-12-middle center light-text padded">
-            <h2>our hours.</h2>
+            <h2 data-aos="fade-up">our hours.</h2>
             <p class="margin-top">Sunday 10 am - 5 pm <br> Monday 10 am - 8 pm <br> Tuesday 10 am - 8 pm <br> Wednesday 10 am - 8 pm <br> Thursday 10 am - 8 pm <br> Friday 10 am - 8 pm <br> Saturday 10 am - 6 pm</p>
         </div>
     </section>
@@ -61,7 +65,7 @@
     <!--------- Menu ----------->
     <section class="grid-center featured-text light-text menu padded">
         <div class="col-12-middle center">
-            <h2 class="text-lg">spa services</h2>
+            <h2 class="text-lg" data-aos="zoom-in">spa services</h2>
         </div>
     <!----- First Column ------->
     <div class="col-12 padded-2">
@@ -247,9 +251,9 @@
 
     <section class="grid center bg-image bg-water tall-50">
         <div class="col-12-middle padded-t-2 padded-b-2">
-            <h2>book a treatment</h2>
-            <p class="margin-t-1"><a href="mailto:beachsidetimeoutmassage@gmail.com">email us: beachsidetimeoutmassage@gmail.com</a></p>
-            <p><a href="tel:+13216104556">call us: (321) 610-4556</a></p>
+            <h2 data-aos="zoom-in">book a treatment</h2>
+            <p data-aos="zoom-in" class="margin-t-1"><a href="mailto:beachsidetimeoutmassage@gmail.com">email us: beachsidetimeoutmassage@gmail.com</a></p>
+            <p data-aos="zoom-in"><a href="tel:+13216104556">call us: (321) 610-4556</a></p>
         </div>
     </section>
 
@@ -270,6 +274,21 @@
             <p>Copyright 2021</p>
         </div>
     </footer>
+
+    <!---- Animate on Scroll JS ------>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!------ Animate on Scroll details ------>
+    <script>
+        AOS.init({
+        offset: 150, // offset (in px) from the original trigger point
+        delay: 10, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+    });
+    </script>
     
 </body>
 </html>
